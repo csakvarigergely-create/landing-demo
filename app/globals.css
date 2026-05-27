@@ -67,7 +67,7 @@ body {
   }
 
   .card {
-    @apply rounded-2xl border border-line bg-white/86 p-6 shadow-soft transition duration-300 ease-premium hover:-translate-y-1 hover:border-aqua/35 hover:shadow-lift;
+    @apply rounded-2xl border border-line bg-white p-6 shadow-soft transition duration-300 ease-premium hover:-translate-y-1 hover:border-aqua/35 hover:shadow-lift;
   }
 
   .pill {
