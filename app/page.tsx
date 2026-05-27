@@ -234,46 +234,44 @@ export default function Home() {
       </aside>
 
       <footer className="bg-navy text-white">
-        <div className="container-grid py-14 lg:grid-cols-[1.15fr_1fr_1fr_1fr] lg:gap-12">
-          <div>
-            <strong className="text-xl">KlímaPont Győr Kft.</strong>
-            <p className="mt-4 max-w-sm text-white/68">
-              Klíma telepítés, tisztítás és karbantartás Győrben és 30 km-es körzetben. Korrekt ár, tiszta munka, garanciás átadás.
-            </p>
-            <div className="mt-6 border-l-2 border-aqua pl-4 text-sm leading-6 text-white/72">
-              Helyszíni felmérés előre egyeztetett időpontban, lakossági és kisebb céges munkákra.
+        <div className="container-wrap py-12 lg:py-14">
+          <div className="grid gap-10 border-b border-white/10 pb-10 lg:grid-cols-[1.05fr_1.35fr] lg:gap-16">
+            <div>
+              <strong className="block text-2xl font-black">KlímaPont Győr Kft.</strong>
+              <p className="mt-4 max-w-md text-sm leading-7 text-white/68">
+                Klíma telepítés, tisztítás és karbantartás Győrben és 30 km-es körzetben. Előre egyeztetett időpont, tiszta munkavégzés, garanciás átadás.
+              </p>
+              <div className="mt-7 grid gap-2 text-sm">
+                <a className="text-lg font-black text-white transition hover:text-cyan-100" href="tel:+36701234567">+36 70 123 4567</a>
+                <a className="text-white/72 transition hover:text-cyan-100" href="mailto:info@klimapontgyor.hu">info@klimapontgyor.hu</a>
+              </div>
+            </div>
+            <div className="grid gap-8 sm:grid-cols-3">
+              <div className="footer-list">
+                <strong>Nyitvatartás</strong>
+                <span>Hétfő - Péntek: 8:00 - 17:00</span>
+                <span>Szombat: egyeztetéssel</span>
+                <span>Vasárnap: zárva</span>
+              </div>
+              <div className="footer-list">
+                <strong>Terület</strong>
+                <span>Győr</span>
+                <span>Győrújbarát, Abda</span>
+                <span>Nyúl, Vámosszabadi</span>
+                <span>Pannonhalma környéke</span>
+              </div>
+              <div className="footer-list">
+                <strong>Cégadatok</strong>
+                <span>Adószám: 12345678-2-08</span>
+                <span>9024 Győr, Minta utca 12.</span>
+                <a href="#">Impresszum</a>
+                <a href="#">Adatkezelési tájékoztató</a>
+              </div>
             </div>
           </div>
-          <div className="footer-list">
-            <strong>Kapcsolat</strong>
-            <a className="text-white" href="tel:+36701234567">+36 70 123 4567</a>
-            <a href="mailto:info@klimapontgyor.hu">info@klimapontgyor.hu</a>
-            <span>Válaszidő: általában 24 órán belül</span>
-          </div>
-          <div className="footer-list">
-            <strong>Nyitvatartás</strong>
-            <span>Hétfő - Péntek: 8:00 - 17:00</span>
-            <span>Szombat: előzetes egyeztetéssel</span>
-            <span>Vasárnap: zárva</span>
-          </div>
-          <div className="footer-list">
-            <strong>Szolgáltatási terület</strong>
-            <span>Győr</span>
-            <span>Győrújbarát</span>
-            <span>Vámosszabadi</span>
-            <span>Abda, Nyúl, Pannonhalma</span>
-          </div>
-        </div>
-        <div className="container-wrap">
-          <div className="grid gap-6 border-t border-white/10 py-6 text-sm text-white/56 md:grid-cols-[1.2fr_1fr] md:items-center">
-            <div className="grid gap-1">
-              <span>KlímaPont Győr Kft. · Adószám: 12345678-2-08 · 9024 Győr, Minta utca 12.</span>
-              <span>© 2026 KlímaPont Győr Kft. Minden jog fenntartva.</span>
-            </div>
-            <div className="flex flex-wrap gap-x-5 gap-y-2 md:justify-end">
-              <a className="transition hover:text-cyan-100" href="#">Impresszum</a>
-              <a className="transition hover:text-cyan-100" href="#">Adatkezelési tájékoztató</a>
-            </div>
+          <div className="flex flex-col gap-2 pt-6 text-sm text-white/52 md:flex-row md:items-center md:justify-between">
+            <span>© 2026 KlímaPont Győr Kft. Minden jog fenntartva.</span>
+            <span>Válaszidő ajánlatkérésre: általában 24 órán belül.</span>
           </div>
         </div>
       </footer>
