@@ -66,14 +66,6 @@ body {
     @apply inline-flex min-h-11 items-center justify-center rounded-xl border border-aqua/25 bg-white/80 px-4 py-2 font-black text-aqua transition duration-300 ease-premium hover:-translate-y-0.5 hover:border-aqua/60;
   }
 
-  .card {
-    @apply rounded-2xl border border-line bg-white p-6 shadow-soft transition duration-300 ease-premium hover:-translate-y-1 hover:border-aqua/35 hover:shadow-lift;
-  }
-
-  .pill {
-    @apply rounded-xl border border-line bg-white px-3 py-2 text-sm font-bold text-ink shadow-sm transition duration-300 ease-premium hover:-translate-y-0.5 hover:border-aqua;
-  }
-
   .field {
     @apply grid gap-2 text-sm font-bold text-muted;
   }
