@@ -45,16 +45,18 @@ export default function Home() {
             </div>
 
             <div className="relative mt-10 lg:-mr-10 lg:mt-0">
-              <div className="absolute -bottom-6 -right-6 hidden h-[72%] w-[88%] bg-navy lg:block" />
-              <Image
-                src="/assets/klima-hero-real-hvac.png"
-                alt="Klímaszerelők beltéri egységet szerelnek egy győri otthonban"
-                width={1100}
-                height={760}
-                priority
-                className="relative ml-auto aspect-[4/3] w-full rounded-[1.25rem] object-cover shadow-lift lg:w-[94%]"
-              />
-              <div className="relative ml-auto mt-5 max-w-xl border-l-2 border-aqua pl-5 text-sm font-bold leading-6 text-ink lg:mr-8">
+              <div className="relative">
+                <div className="absolute -right-5 bottom-5 top-12 hidden w-[88%] bg-navy lg:block" />
+                <Image
+                  src="/assets/klima-hero-real-hvac.png"
+                  alt="Klímaszerelők beltéri egységet szerelnek egy győri otthonban"
+                  width={1100}
+                  height={760}
+                  priority
+                  className="relative z-10 ml-auto aspect-[4/3] w-full rounded-[1.25rem] object-cover shadow-lift lg:w-[94%]"
+                />
+              </div>
+              <div className="relative z-20 ml-auto mt-6 max-w-xl border-l-2 border-aqua bg-[#eef5f7] py-1 pl-5 pr-3 text-sm font-bold leading-6 text-ink lg:mr-8">
                 Beltéri egység szerelés, takarófólia, saját szerszámok. Nem bemutatótermi kép, hanem olyan munkakörnyezet,
                 amivel egy átlagos győri otthonban is számolhatsz.
               </div>
