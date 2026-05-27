@@ -137,21 +137,27 @@ export default function Home() {
 
         <section className="container-section">
           <div className="grid items-center gap-12 lg:grid-cols-[1.18fr_0.82fr] lg:gap-16">
-            <Image
-              src="/assets/klima-outdoor-real-install.png"
-              alt="Klímaszerelők kültéri egységet telepítenek családi háznál, szerelőautóval és szerszámokkal"
-              width={1000}
-              height={700}
-              className="aspect-[5/3] rounded-[1.5rem] object-cover"
-            />
-            <div className="max-w-xl">
+            <figure className="grid gap-5">
+              <Image
+                src="/assets/klima-outdoor-real-install.png"
+                alt="Klímaszerelők kültéri egységet telepítenek családi háznál, szerelőautóval és szerszámokkal"
+                width={1000}
+                height={700}
+                className="aspect-[5/3] rounded-[1.5rem] object-cover"
+              />
+              <figcaption className="max-w-2xl border-l-2 border-aqua pl-5 text-sm font-bold leading-6 text-muted">
+                Kültéri egység telepítés családi háznál, saját szerszámokkal és rendezett munkaterülettel.
+                A cél az, hogy a rendszer ne csak működjön, hanem tisztán és átgondoltan legyen átadva.
+              </figcaption>
+            </figure>
+            <div className="max-w-xl lg:pl-2">
               <p className="eyebrow">Helyszíni munka</p>
               <h2 className="heading-lg">Nem katalóguskép. Ilyen egy átlagos szerelési nap.</h2>
-              <p className="mt-5 text-lg text-muted">
+              <p className="mt-5 text-lg leading-8 text-muted">
                 Szerelő autóval érkezünk, szerszámokkal, takarófóliával és porszívóval. Kültéri egység,
                 beltéri egység, csövezés, tisztítás: minden munkánál figyelünk a rendre.
               </p>
-              <div className="mt-8 grid gap-3 border-l-2 border-aqua pl-5">
+              <div className="mt-8 grid gap-3 border-l-2 border-line pl-5">
                 {["Cipővédő használat", "Pormentes fúrás", "Rendezett átadás"].map((item) => (
                   <span key={item} className="text-sm font-black text-ink">
                     {item}
