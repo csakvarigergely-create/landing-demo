@@ -21,15 +21,15 @@ body {
   }
 
   .container-section {
-    @apply container-wrap py-16 lg:py-24;
+    @apply mx-auto w-full max-w-[1180px] px-5 py-16 lg:py-24;
   }
 
   .container-grid {
-    @apply container-wrap grid gap-10;
+    @apply mx-auto grid w-full max-w-[1180px] gap-10 px-5;
   }
 
   .section-grid {
-    @apply container-section grid gap-10 lg:grid-cols-2;
+    @apply mx-auto grid w-full max-w-[1180px] gap-10 px-5 py-16 lg:grid-cols-2 lg:py-24;
   }
 
   .section-head {
@@ -37,11 +37,13 @@ body {
   }
 
   .heading-xl {
-    @apply text-[clamp(2.65rem,7vw,5.5rem)] font-black leading-[0.98] tracking-tight text-ink;
+    @apply font-black leading-[0.98] tracking-tight text-ink;
+    font-size: clamp(2.65rem, 7vw, 5.5rem);
   }
 
   .heading-lg {
-    @apply text-[clamp(2rem,4vw,3.3rem)] font-black leading-[1.05] tracking-tight;
+    @apply font-black leading-[1.05] tracking-tight;
+    font-size: clamp(2rem, 4vw, 3.3rem);
   }
 
   .eyebrow {

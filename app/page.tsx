@@ -83,13 +83,17 @@ export default function Home() {
             </a>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
-            {services.map((service, index) => (
-              <article key={service.title} className="card group">
-                <Icon name={serviceIcons[index]} className="mb-6 h-7 w-7 text-aqua transition group-hover:scale-110" />
-                <h3 className="text-xl font-black text-ink">{service.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-muted">{service.text}</p>
-              </article>
-            ))}
+            {services.map((service, index) => {
+              const iconName = serviceIcons[index] ?? "snow";
+
+              return (
+                <article key={service.title} className="card group">
+                  <Icon name={iconName} className="mb-6 h-7 w-7 text-aqua transition group-hover:scale-110" />
+                  <h3 className="text-xl font-black text-ink">{service.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-muted">{service.text}</p>
+                </article>
+              );
+            })}
           </div>
         </section>
 
