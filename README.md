@@ -29,6 +29,7 @@ Az ajanlatkero urlap az `/api/lead` route-ra kuld. A route a Make webhook fele c
 - `name`
 - `phone`
 - `email`
+- `city`
 - `message`
 
 Vercelben vagy `.env.local` fajlban ezt az env valtozot allitsd be:

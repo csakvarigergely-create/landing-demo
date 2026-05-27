@@ -27,6 +27,7 @@ export async function POST(request: Request) {
     name: payload.name,
     phone: payload.phone,
     email: payload.email,
+    city: payload.city ?? "",
     message: payload.message ?? ""
   };
 
