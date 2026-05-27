@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
   const lead = {
     ...payload,
-    source: "klima-komfort-landing",
+    source: "klimapont-gyor-landing",
     createdAt: new Date().toISOString()
   };
 

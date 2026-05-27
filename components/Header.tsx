@@ -15,13 +15,13 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/82 backdrop-blur-xl transition-shadow">
       <div className="mx-auto flex min-h-[76px] max-w-7xl items-center justify-between gap-4 px-5 lg:px-8">
-        <a href="#top" className="flex items-center gap-3" aria-label="Klíma Komfort főoldal">
+        <a href="#top" className="flex items-center gap-3" aria-label="KlímaPont Győr főoldal">
           <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-aqua via-blue to-slate-800 text-sm font-black text-white shadow-soft">
-            KK
+            KG
           </span>
           <span className="grid leading-tight">
-            <strong className="text-ink">Klíma Komfort</strong>
-            <small className="text-xs text-muted">Győr és környéke</small>
+            <strong className="text-ink">KlímaPont Győr</strong>
+            <small className="text-xs text-muted">klíma telepítés és tisztítás</small>
           </span>
         </a>
 
@@ -52,7 +52,7 @@ export function Header() {
             +36 70 123 4567
           </a>
           <a href="#ajanlat" className="btn-primary min-h-11 px-4">
-            Ingyenes ajánlatkérés
+            Ingyenes ajánlat 1 percen belül
           </a>
         </div>
       </div>
@@ -68,7 +68,7 @@ export function Header() {
           </a>
         ))}
         <a href="#ajanlat" className="btn-primary mt-1" onClick={() => setOpen(false)}>
-          Ingyenes ajánlatkérés
+          Ingyenes ajánlat 1 percen belül
         </a>
       </nav>
     </header>

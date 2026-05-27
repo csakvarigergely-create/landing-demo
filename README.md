@@ -1,4 +1,4 @@
-# Klíma Komfort landing oldal
+# KlímaPont Győr landing oldal
 
 Next.js + Tailwind alapú, konverzió fókuszú klímaszerelő landing oldal magyar piacra.
 
@@ -42,7 +42,6 @@ Képek:
 
 ## Élesítés előtt cserélendő
 
-- Cégnév
 - Telefonszám
 - Email
 - Cégadatok

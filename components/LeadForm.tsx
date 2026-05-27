@@ -56,16 +56,16 @@ export function LeadForm() {
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="field">
           Email
-          <input name="email" type="email" placeholder="email@pelda.hu" required />
+          <input name="email" type="email" placeholder="nev@email.hu" required />
         </label>
         <label className="field">
           Település
-          <input name="city" type="text" placeholder="Győr" required />
+          <input name="city" type="text" placeholder="Győr, Győrújbarát, Abda..." required />
         </label>
       </div>
       <label className="field">
         Rövid üzenet
-        <textarea name="message" rows={4} placeholder="Például: nappaliba szeretnék klímát, visszahívást kérek." />
+        <textarea name="message" rows={4} placeholder="Például: nappaliba szeretnék klímát, vagy tisztítást kérek a meglévő készülékre." />
       </label>
 
       {error ? <p className="rounded-xl bg-red-50 px-3 py-2 text-sm text-red-700">{error}</p> : null}
@@ -76,7 +76,7 @@ export function LeadForm() {
       ) : null}
 
       <button className="btn-primary min-h-[52px] w-full" disabled={state === "loading"} type="submit">
-        {state === "loading" ? "Küldés folyamatban..." : "Ingyenes ajánlatot kérek"}
+        {state === "loading" ? "Küldés folyamatban..." : "Gyors árajánlatot kérek"}
       </button>
     </form>
   );

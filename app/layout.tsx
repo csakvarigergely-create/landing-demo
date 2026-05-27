@@ -3,13 +3,12 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Klíma Komfort - klímaszerelés gyors kivitelezéssel",
+  title: "KlímaPont Győr - klímaszerelés és tisztítás Győrben",
   description:
-    "Modern hűtés-fűtés megoldások lakossági és üzleti ügyfeleknek. Ingyenes felmérés, garanciás telepítés, gyors kiszállás.",
+    "Klíma telepítés, tisztítás és karbantartás Győrben és 30 km-es körzetben. 24 órán belüli kapcsolatfelvétel, ingyenes felmérés, 5 év garancia.",
   openGraph: {
-    title: "Klíma Komfort - klímaszerelés gyors kivitelezéssel",
-    description:
-      "Ingyenes felmérés, garanciás telepítés és gyors kiszállás Győrben és környékén.",
+    title: "KlímaPont Győr - klímaszerelés és tisztítás Győrben",
+    description: "Ingyenes felmérés, korrekt árak és garanciás klímaszerelés Győrben és környékén.",
     images: ["/assets/klima-hero-premium.png"],
     locale: "hu_HU",
     type: "website"
