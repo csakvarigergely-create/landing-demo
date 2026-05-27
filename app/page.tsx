@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { LeadForm } from "@/components/LeadForm";
 import { ChatAssistant } from "@/components/ChatAssistant";
 import { Icon } from "@/components/Icon";
-import { benefits, services, stats, testimonials, trustItems } from "@/lib/content";
+import { benefits, services, testimonials, trustItems } from "@/lib/content";
 
 const serviceIcons = ["snow", "spark", "tool", "home", "factory"] as const;
 
@@ -12,61 +12,73 @@ export default function Home() {
     <>
       <Header />
       <main id="top">
-        <section className="relative overflow-hidden bg-soft">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(11,167,165,0.14),transparent_34%),radial-gradient(circle_at_88%_12%,rgba(36,94,159,0.10),transparent_30%)]" />
-          <div className="container-grid relative min-h-[calc(100vh-76px)] items-center py-16 lg:grid-cols-[0.92fr_1.08fr] lg:py-24">
+        <section className="relative overflow-hidden bg-[#eef5f7]">
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(245,248,249,0.98)_0%,rgba(245,248,249,0.92)_42%,rgba(245,248,249,0.35)_100%),radial-gradient(circle_at_18%_24%,rgba(11,167,165,0.16),transparent_28%)]" />
+          <div className="container-grid relative items-center py-12 lg:min-h-[680px] lg:grid-cols-[0.9fr_1.1fr] lg:py-16">
             <div className="max-w-3xl">
-              <p className="eyebrow">Győr és 30 km-es körzete</p>
-              <h1 className="heading-xl">Klímaszerelés Győrben, kiszámítható árral és tiszta munkával</h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-muted md:text-xl">
-                Helyszíni felmérés, érthető ajánlat, garanciás kivitelezés. Lakásokba, családi házakba
-                és kisebb céges helyszínekre vállalunk telepítést, tisztítást és karbantartást.
+              <div className="mb-5 inline-flex rounded-full border border-aqua/20 bg-white/80 px-4 py-2 text-sm font-black text-aqua shadow-soft">
+                Győr és 30 km-es körzet · 24 órán belüli kapcsolatfelvétel
+              </div>
+              <h1 className="heading-xl">Klímaszerelés Győrben, garanciával és tiszta átadással</h1>
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-muted md:text-xl">
+                Ingyenes helyszíni felmérés, előre egyeztetett ár, pontos érkezés.
+                Lakásokba, családi házakba és kisebb céges helyszínekre vállalunk klímás munkát.
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a href="#ajanlat" className="btn-primary min-h-[52px] px-6">
+
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <a href="#ajanlat" className="btn-primary min-h-[56px] px-7 text-base">
                   Ingyenes ajánlat 1 percen belül
                 </a>
-                <a href="#ajanlat" className="btn-secondary min-h-[52px] px-6">
-                  Visszahívást kérek
+                <a
+                  href="tel:+36701234567"
+                  className="inline-flex min-h-[56px] items-center justify-center rounded-xl border-2 border-navy bg-white px-6 font-black text-navy shadow-soft transition duration-300 ease-premium hover:-translate-y-0.5 hover:border-aqua hover:text-aqua"
+                >
+                  +36 70 123 4567
                 </a>
               </div>
-              <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                {stats.map((item) => (
-                  <div key={item} className="rounded-2xl border border-line bg-white/78 p-4 shadow-soft backdrop-blur">
-                    <strong className="text-ink">{item}</strong>
-                  </div>
-                ))}
+
+              <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm font-bold text-ink">
+                <span>✓ 500+ telepítés</span>
+                <span>✓ 4.9★ Google értékelés</span>
+                <span>✓ 5 év garancia</span>
               </div>
             </div>
 
-            <div className="relative mt-12 lg:mt-0">
-              <div className="absolute -left-5 top-12 z-10 rounded-2xl border border-white/60 bg-white/82 p-4 shadow-lift backdrop-blur">
-                <strong className="block text-2xl text-ink">4.9★</strong>
-                <span className="text-sm text-muted">Google értékelés</span>
-              </div>
-              <div className="absolute -right-2 bottom-12 z-10 rounded-2xl border border-white/60 bg-white/86 p-4 shadow-lift backdrop-blur">
-                <strong className="block text-2xl text-ink">24 óra</strong>
-                <span className="text-sm text-muted">kapcsolatfelvétel</span>
-              </div>
+            <div className="relative mt-10 lg:mt-0">
+              <div className="absolute inset-y-8 right-0 hidden w-[82%] rounded-[2rem] bg-navy/95 shadow-lift lg:block" />
               <Image
                 src="/assets/klima-hero-premium.png"
                 alt="Klímaszerelő beltéri egységet ellenőriz egy győri lakásban"
                 width={1100}
                 height={760}
                 priority
-                className="rounded-[2rem] object-cover shadow-lift"
+                className="relative ml-auto aspect-[4/3] w-full rounded-[1.75rem] object-cover shadow-lift lg:w-[92%]"
               />
+              <div className="relative -mt-8 ml-auto mr-4 grid max-w-xl grid-cols-3 overflow-hidden rounded-2xl border border-line bg-white shadow-lift">
+                <div className="p-4">
+                  <strong className="block text-lg text-ink">24 óra</strong>
+                  <span className="text-xs text-muted">visszajelzés</span>
+                </div>
+                <div className="border-x border-line p-4">
+                  <strong className="block text-lg text-ink">5 év</strong>
+                  <span className="text-xs text-muted">garancia</span>
+                </div>
+                <div className="p-4">
+                  <strong className="block text-lg text-ink">500+</strong>
+                  <span className="text-xs text-muted">munka</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="container-wrap relative z-10 -mt-8">
-          <div className="grid overflow-hidden rounded-2xl border border-line bg-white shadow-soft md:grid-cols-5">
+        <section className="container-wrap relative z-10">
+          <div className="grid border-y border-line bg-white/45 py-7 md:grid-cols-5">
             {trustItems.map((item, index) => (
-              <article key={item.title} className="border-line p-5 md:border-r md:last:border-r-0">
+              <article key={item.title} className="px-0 py-4 md:px-5 md:py-0">
                 <Icon
                   name={index === 0 ? "clock" : index === 1 ? "shield" : index === 2 ? "spark" : index === 3 ? "snow" : "factory"}
-                  className="mb-4 h-6 w-6 text-aqua"
+                  className="mb-4 h-5 w-5 text-aqua"
                 />
                 <h3 className="font-black text-ink">{item.title}</h3>
                 <p className="mt-2 text-sm text-muted">{item.text}</p>
@@ -76,27 +88,33 @@ export default function Home() {
         </section>
 
         <section id="szolgaltatasok" className="container-section">
-          <div className="section-head">
-            <div>
+          <div className="grid gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16">
+            <div className="lg:sticky lg:top-28 lg:self-start">
               <p className="eyebrow">Szolgáltatások</p>
               <h2 className="heading-lg">Amit ténylegesen vállalunk</h2>
-            </div>
-            <a href="#ajanlat" className="text-link">
+            <p className="mt-5 max-w-md text-lg leading-8 text-muted">
+                Nem csomagokat akarunk eladni. Megnézzük a helyszínt, elmondjuk a lehetőségeket,
+                és olyan megoldást javaslunk, ami hosszú távon is rendben lesz.
+            </p>
+            <a href="#ajanlat" className="btn-primary mt-8">
               Gyors árajánlat
             </a>
           </div>
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+          <div className="divide-y divide-line border-y border-line">
             {services.map((service, index) => {
               const iconName = serviceIcons[index] ?? "snow";
 
               return (
-                <article key={service.title} className="card group">
-                  <Icon name={iconName} className="mb-6 h-7 w-7 text-aqua transition group-hover:scale-110" />
-                  <h3 className="text-xl font-black text-ink">{service.title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-muted">{service.text}</p>
+                <article key={service.title} className="group grid gap-5 py-7 sm:grid-cols-[3rem_1fr]">
+                  <Icon name={iconName} className="h-7 w-7 text-aqua transition duration-300 ease-premium group-hover:translate-x-1" />
+                  <div className="grid gap-3 md:grid-cols-[0.65fr_1fr] md:items-start">
+                    <h3 className="text-2xl font-black leading-tight text-ink">{service.title}</h3>
+                    <p className="leading-7 text-muted">{service.text}</p>
+                  </div>
                 </article>
               );
             })}
+          </div>
           </div>
         </section>
 
@@ -113,11 +131,11 @@ export default function Home() {
                 Visszahívást kérek
               </a>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {benefits.map((item) => (
-                <div key={item} className="rounded-2xl border border-white/12 bg-white/8 p-5 backdrop-blur transition hover:-translate-y-1 hover:bg-white/12">
-                  <Icon name="shield" className="mb-4 h-6 w-6 text-cyan-100" />
-                  <strong>{item}</strong>
+            <div className="border-y border-white/14">
+              {benefits.map((item, index) => (
+                <div key={item} className="grid grid-cols-[3rem_1fr] gap-5 border-b border-white/10 py-6 last:border-b-0">
+                  <span className="text-sm font-black text-cyan-100">{String(index + 1).padStart(2, "0")}</span>
+                  <strong className="text-xl leading-7">{item}</strong>
                 </div>
               ))}
             </div>
@@ -125,24 +143,24 @@ export default function Home() {
         </section>
 
         <section className="container-section">
-          <div className="section-grid items-center">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.18fr_0.82fr] lg:gap-16">
             <Image
               src="/assets/klima-outdoor-work.png"
               alt="Klímaszerelők kültéri egységet szerelnek családi háznál"
               width={1000}
               height={700}
-              className="rounded-[1.75rem] object-cover shadow-lift"
+              className="aspect-[5/3] rounded-[1.5rem] object-cover"
             />
-            <div>
+            <div className="max-w-xl">
               <p className="eyebrow">Helyszíni munka</p>
               <h2 className="heading-lg">Nem katalóguskép. Ilyen egy átlagos szerelési nap.</h2>
               <p className="mt-5 text-lg text-muted">
                 Szerelő autóval érkezünk, szerszámokkal, takarófóliával és porszívóval. Kültéri egység,
                 beltéri egység, csövezés, tisztítás: minden munkánál figyelünk a rendre.
               </p>
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-8 grid gap-3 border-l-2 border-aqua pl-5">
                 {["Cipővédő használat", "Pormentes fúrás", "Rendezett átadás"].map((item) => (
-                  <span key={item} className="pill">
+                  <span key={item} className="text-sm font-black text-ink">
                     {item}
                   </span>
                 ))}
@@ -157,16 +175,16 @@ export default function Home() {
               <p className="eyebrow">Ügyfélvélemények</p>
               <h2 className="heading-lg">Nem reklámszöveg. Ezt emelik ki az ügyfelek.</h2>
             </div>
-            <div className="rounded-2xl border border-line bg-white p-4 shadow-soft">
+            <div className="border-l-2 border-aqua pl-5">
               <strong className="text-2xl text-ink">4.9★</strong>
               <p className="text-sm text-muted">Google értékelés, 127+ visszajelzés</p>
             </div>
           </div>
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-8 border-y border-line py-8 md:grid-cols-3">
             {testimonials.map((item) => (
-              <article key={item.name} className="card">
+              <article key={item.name} className="pr-4">
                 <div className="flex items-center gap-3">
-                  <span className="grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-aqua to-blue font-black text-white">
+                  <span className="grid h-11 w-11 place-items-center rounded-full bg-navy font-black text-white">
                     {item.name.charAt(0)}
                   </span>
                   <div>
@@ -183,8 +201,8 @@ export default function Home() {
 
         <ChatAssistant />
 
-        <section id="ajanlat" className="container-section">
-          <div className="grid items-start gap-10 rounded-[2rem] bg-navy p-6 text-white shadow-lift lg:grid-cols-[0.9fr_1.1fr] lg:p-12">
+        <section id="ajanlat" className="bg-navy text-white">
+          <div className="container-grid items-start py-16 lg:grid-cols-[0.9fr_1.1fr] lg:py-24">
             <div>
               <p className="eyebrow text-cyan-100">Ajánlatkérés</p>
               <h2 className="heading-lg">Kérj gyors árajánlatot vagy visszahívást</h2>

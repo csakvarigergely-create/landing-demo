@@ -51,7 +51,7 @@ body {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-aqua to-blue px-5 py-3 font-black text-white shadow-soft transition duration-300 ease-premium hover:-translate-y-0.5 hover:shadow-lift disabled:cursor-not-allowed disabled:opacity-70;
+    @apply inline-flex items-center justify-center rounded-xl bg-navy px-5 py-3 font-black text-white shadow-soft transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-aqua disabled:cursor-not-allowed disabled:opacity-70;
   }
 
   .btn-secondary {
@@ -59,7 +59,7 @@ body {
   }
 
   .btn-light {
-    @apply inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 font-black text-navy shadow-soft transition duration-300 ease-premium hover:-translate-y-0.5;
+    @apply inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 font-black text-navy transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-cyan-50;
   }
 
   .text-link {
