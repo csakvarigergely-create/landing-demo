@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "KlímaPont Győr - klímaszerelés és tisztítás Győrben",
     description: "Ingyenes felmérés, korrekt árak és garanciás klímaszerelés Győrben és környékén.",
-    images: ["/assets/klima-hero-premium.png"],
+    images: ["/assets/klima-hero-real-hvac.png"],
     locale: "hu_HU",
     type: "website"
   }

@@ -47,8 +47,8 @@ export default function Home() {
             <div className="relative mt-10 lg:mt-0">
               <div className="absolute inset-y-8 right-0 hidden w-[82%] rounded-[2rem] bg-navy/95 shadow-lift lg:block" />
               <Image
-                src="/assets/klima-hero-premium.png"
-                alt="Klímaszerelő beltéri egységet ellenőriz egy győri lakásban"
+                src="/assets/klima-hero-real-hvac.png"
+                alt="Klímaszerelők beltéri egységet szerelnek egy győri otthonban"
                 width={1100}
                 height={760}
                 priority
@@ -145,8 +145,8 @@ export default function Home() {
         <section className="container-section">
           <div className="grid items-center gap-12 lg:grid-cols-[1.18fr_0.82fr] lg:gap-16">
             <Image
-              src="/assets/klima-outdoor-work.png"
-              alt="Klímaszerelők kültéri egységet szerelnek családi háznál"
+              src="/assets/klima-outdoor-real-install.png"
+              alt="Klímaszerelők kültéri egységet telepítenek családi háznál, szerelőautóval és szerszámokkal"
               width={1000}
               height={700}
               className="aspect-[5/3] rounded-[1.5rem] object-cover"
