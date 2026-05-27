@@ -1,15 +1,15 @@
-# KlímaPont Győr landing oldal
+# KlimaPont Gyor landing oldal
 
-Next.js + Tailwind alapú, konverzió fókuszú klímaszerelő landing oldal magyar piacra.
+Next.js + Tailwind alapu, konverzio fokuszu klimaszerelo landing oldal magyar piacra.
 
-## Futtatás
+## Futtatas
 
 ```bash
 npm install
 npm run dev
 ```
 
-Helyi cím:
+Helyi cim:
 
 ```text
 http://localhost:3000
@@ -24,27 +24,34 @@ npm run start
 
 ## Lead webhook
 
-Az ajánlatkérő űrlap az `/api/lead` route-ra küld. Ha van külső CRM, Make, Zapier vagy saját webhook, állítsd be:
+Az ajanlatkero urlap az `/api/lead` route-ra kuld. A route a Make webhook fele csak ezeket a mezoket tovabbitja:
+
+- `name`
+- `phone`
+- `email`
+- `message`
+
+Vercelben vagy `.env.local` fajlban ezt az env valtozot allitsd be:
 
 ```text
-LEAD_WEBHOOK_URL=https://...
+NEXT_PUBLIC_LEAD_WEBHOOK_URL=https://...
 ```
 
-Ha nincs webhook beállítva, az API akkor is sikeres választ ad, így a frontend működése tesztelhető.
+Ha nincs valos HTTPS webhook beallitva, az API hibat ad vissza, igy eles kornyezetben nem veszhet el csendben ajanlatkeres.
 
 ## Assetek
 
-Képek:
+Kepek:
 
-- `public/assets/klima-hero-premium.png`
-- `public/assets/klima-outdoor-work.png`
+- `public/assets/klima-hero-real-hvac.png`
+- `public/assets/klima-outdoor-real-install.png`
 - `public/assets/klima-work-reference.png`
 
-## Élesítés előtt cserélendő
+## Elesites elott cserelendo
 
-- Telefonszám
+- Telefonszam
 - Email
-- Cégadatok
-- Valódi Google értékelések
-- Szolgáltatási területek
-- Webhook URL
+- Cegadatok
+- Valodi Google ertekelesek
+- Szolgaltatasi teruletek
+- Make webhook URL
