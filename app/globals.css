@@ -15,6 +15,16 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
 
+#chatbase-bubble-button {
+  right: 18px !important;
+  bottom: 22px !important;
+}
+
+#chatbase-bubble-window {
+  right: 18px !important;
+  bottom: 92px !important;
+}
+
 @layer components {
   .container-wrap {
     @apply mx-auto w-full max-w-[1180px] px-5;
@@ -95,5 +105,19 @@ body {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #chatbase-bubble-button {
+    right: 14px !important;
+    bottom: 92px !important;
+  }
+
+  #chatbase-bubble-window {
+    right: 10px !important;
+    bottom: 156px !important;
+    max-height: calc(100vh - 176px) !important;
+    max-width: calc(100vw - 20px) !important;
   }
 }
