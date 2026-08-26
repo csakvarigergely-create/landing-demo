@@ -84,8 +84,7 @@ export default function Home() {
               <p className="eyebrow">Szolgáltatások</p>
               <h2 className="heading-lg">Amit ténylegesen vállalunk</h2>
               <p className="mt-5 max-w-md text-lg leading-8 text-muted">
-                Nem csomagokat akarunk eladni. Megnézzük a helyszínt, elmondjuk a lehetőségeket,
-                és olyan megoldást javaslunk, ami hosszú távon is rendben lesz.
+                Nem az a célunk, hogy mindenáron a legdrágább készüléket adjuk el. Megnézzük a helyszínt, átbeszéljük, mire van szükséged, és olyan megoldást javaslunk, amit az adott helyre mi is jó szívvel választanánk.
               </p>
               <a href="#ajanlat" className="btn-primary mt-8">
               Gyors árajánlat
