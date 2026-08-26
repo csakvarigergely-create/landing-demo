@@ -19,15 +19,14 @@ export default function Home() {
               <div className="mb-6 border-l-2 border-aqua pl-4 text-sm font-black uppercase tracking-[0.14em] text-aqua">
                 KlímaPont Győr · 24 órán belüli kapcsolatfelvétel
               </div>
-              <h1 className="heading-xl">Klímaszerelés Győrben, garanciával és tiszta átadással</h1>
+              <h1 className="heading-xl">Klímaszerelés Győrben, előre egyeztetett árral és garanciával</h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-muted md:text-xl">
-                Ingyenes helyszíni felmérés, előre egyeztetett ár, pontos érkezés.
-                Lakásokba, családi házakba és kisebb céges helyszínekre vállalunk klímás munkát.
+                Telepítést, tisztítást és karbantartást vállalunk Győrben és 30 km-es körzetében. A helyszíni felmérés ingyenes, az árat és az időpontot pedig előre egyeztetjük.
               </p>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <a href="#ajanlat" className="btn-primary min-h-[56px] px-7 text-base">
-                  Ingyenes ajánlat 1 percen belül
+                  Ingyenes felmérést kérek
                 </a>
                 <a
                   href="tel:+36701234567"
