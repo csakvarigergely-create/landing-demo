@@ -30,23 +30,23 @@ export const trustItems = [
 export const services = [
   {
     title: "Klíma telepítés",
-    text: "Ingyenes felmérés után csövezés, kültéri egység rögzítés, beüzemelés és átadás."
+    text: "Új klíma felszerelését a helyszíni felméréstől a beüzemelésig elvégezzük. Segítünk a megfelelő készülék és az elhelyezés kiválasztásában is."
   },
   {
     title: "Klíma tisztítás",
-    text: "Beltéri egység tisztítása, fertőtlenítés, szűrők ellenőrzése. Szezon előtt érdemes kérni."
+    text: "A beltéri egységet alaposan kitisztítjuk és fertőtlenítjük, a szűrőket pedig átnézzük. Érdemes még a nagy nyári használat előtt elvégeztetni."
   },
   {
     title: "Karbantartás",
-    text: "Működéspróba, kondenzvíz ellenőrzés, alap hibakeresés és használati tanácsok."
+    text: "Átnézzük a készülék működését, ellenőrizzük a kondenzvíz elvezetését, és megnézzük, van-e olyan hiba vagy eltérés, amivel érdemes foglalkozni."
   },
   {
-    title: "Hőszivattyú megoldások",
-    text: "Előzetes igényfelmérés után hűtés-fűtés rendszerek családi házakhoz és irodákhoz."
+    title: "Hőszivattyús megoldások",
+    text: "Családi házakhoz és kisebb céges ingatlanokhoz is segítünk megfelelő hűtési-fűtési megoldást választani. A lehetőségeket mindig a helyszín és az igények alapján beszéljük át."
   },
   {
-    title: "Ipari klíma rendszerek",
-    text: "Kisebb üzletek, irodák és műhelyek klímarendszereinek kivitelezése és karbantartása."
+    title: "Céges klímarendszerek",
+    text: "Üzletek, irodák, műhelyek és kisebb telephelyek klímáinak telepítését és karbantartását is vállaljuk."
   }
 ];
 
