@@ -114,12 +114,19 @@ export default function Home() {
           </div>
           <div className="container-grid items-center py-16 lg:grid-cols-[0.9fr_1.1fr] lg:py-24">
             <div>
-              <p className="eyebrow text-cyan-100">Miért minket?</p>
-              <h2 className="heading-lg">Korrekt szakembert keresel, nem hangzatos ígéreteket.</h2>
-              <p className="mt-5 text-lg text-white/72">
-                Elmondjuk, mikor tudunk menni, mennyibe kerülhet, és mire kell figyelni a helyszínen.
-                Ha csúszás van, szólunk. Ha olcsóbb megoldás is elég, azt mondjuk.
-              </p>
+              <p className="eyebrow text-cyan-100">A KlímaPont mögött</p>
+              <h2 className="heading-lg">Nekünk az a jó munka, amivel te is elégedett vagy.</h2>
+              <div className="mt-5 grid gap-4 text-lg text-white/72">
+                <p>
+                  A KlímaPontnál nem azzal kezdünk, hogy melyik készüléket szeretnénk eladni. Először meghallgatjuk, mire van szükséged, megnézzük a helyszínt, és elmondjuk, milyen lehetőségeid vannak.
+                </p>
+                <p>
+                  Fontos, hogy értsd, mit és miért javaslunk. Nem beszélünk rá feleslegesen drágább megoldásra, ha nincs rá szükséged. Ha később kérdésed van, akkor is szívesen segítünk.
+                </p>
+                <p>
+                  A célunk nem csak az, hogy felkerüljön a klíma a falra, hanem hogy hosszú távon is elégedett legyél a választással.
+                </p>
+              </div>
               <a href="#ajanlat" className="btn-light mt-8">
                 Visszahívást kérek
               </a>
