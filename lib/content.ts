@@ -6,24 +6,24 @@ export const stats = [
 
 export const trustItems = [
   {
-    title: "Gyors helyszíni felmérés",
-    text: "Győrben és 30 km-es körzetben előre egyeztetett időpontban."
+    title: "Helyszíni felmérés",
+    text: "Előre egyeztetett időpontban kimegyünk, megnézzük a helyszínt, és átbeszéljük, milyen klímára és milyen elhelyezésre lenne szükség. Győrben és 30 km-es körzetében a felmérés ingyenes."
   },
   {
     title: "Garanciás telepítés",
-    text: "5 év kivitelezési garancia, számla és átadási ellenőrzés."
+    text: "A klímát felszereljük, beüzemeljük, és csak akkor adjuk át, ha mindent rendben találtunk. A kivitelezésre 5 év garanciát vállalunk, a munkáról pedig számlát adunk."
   },
   {
     title: "Tiszta munkavégzés",
-    text: "Cipővédő, takarófólia, porszívó. Nem hagyunk koszt magunk után."
+    text: "Letakarjuk a munkaterületet, és úgy dolgozunk, hogy a szerelés a lehető legkevesebb porral és kosszal járjon."
   },
   {
-    title: "Bejáratott klímamárkák",
-    text: "Daikin, Gree, Midea, Fisher, Samsung. A helyiséghez választunk gépet."
+    title: "Milyen klímákkal dolgozunk?",
+    text: "Daikin, Gree, Midea, Fisher és Samsung készülékeket is telepítünk. Nem egyetlen márkát akarunk rád beszélni, hanem azt nézzük meg, melyik gép illik a helyiséghez, a használathoz és a keretedhez."
   },
   {
-    title: "Lakossági és céges kivitelezés",
-    text: "Lakások, családi házak, üzletek, irodák és kisebb telephelyek."
+    title: "Lakásokba és cégekhez is",
+    text: "Lakásokban, családi házakban, üzletekben, irodákban és kisebb telephelyeken is dolgozunk. Telepítést, tisztítást és rendszeres karbantartást is vállalunk."
   }
 ];
 
