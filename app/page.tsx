@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { LeadForm } from "@/components/LeadForm";
 import { ChatAssistant } from "@/components/ChatAssistant";
 import { Icon } from "@/components/Icon";
-import { benefits, services, testimonials, trustItems } from "@/lib/content";
+import { services, testimonials, trustItems } from "@/lib/content";
 
 const serviceIcons = ["snow", "spark", "tool", "home", "factory"] as const;
 
@@ -112,8 +112,8 @@ export default function Home() {
           <div className="pointer-events-none absolute -right-8 top-8 hidden text-[13rem] font-black leading-none text-white/5 lg:block">
             500+
           </div>
-          <div className="container-grid items-center py-16 lg:grid-cols-[0.9fr_1.1fr] lg:py-24">
-            <div>
+          <div className="container-wrap py-16 lg:py-24">
+            <div className="max-w-3xl">
               <p className="eyebrow text-cyan-100">A KlímaPont mögött</p>
               <h2 className="heading-lg">Nekünk az a jó munka, amivel te is elégedett vagy.</h2>
               <div className="mt-5 grid gap-4 text-lg text-white/72">
@@ -130,14 +130,6 @@ export default function Home() {
               <a href="#ajanlat" className="btn-light mt-8">
                 Visszahívást kérek
               </a>
-            </div>
-            <div className="border-y border-white/14">
-              {benefits.map((item, index) => (
-                <div key={item} className="grid grid-cols-[3rem_1fr] gap-5 border-b border-white/10 py-6 last:border-b-0">
-                  <span className="text-sm font-black text-cyan-100">{String(index + 1).padStart(2, "0")}</span>
-                  <strong className="text-xl leading-7">{item}</strong>
-                </div>
-              ))}
             </div>
           </div>
         </section>
