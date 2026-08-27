@@ -61,17 +61,17 @@ export const testimonials = [
   {
     name: "Szabó Eszter",
     city: "Győr, Nádorváros",
-    text: "Panel nappaliba kértünk klímát. Előre szóltak, mikor érkeznek, cipővédőt húztak, és a fúrás után fel is porszívóztak."
+    text: "Panel nappalijába szerettünk volna klímát. Minden flottul ment, az időpontot előre leegyeztettük, a szerelés pedig gyorsabban megvolt, mint gondoltuk. Külön jó volt, hogy utána mindent rendben hagytak."
   },
   {
     name: "Tóth Gábor",
     city: "Győrújbarát",
-    text: "Családi ház felső szintjére kerestünk megoldást. Nem a legdrágább gépet ajánlották, hanem azt, ami a szobákhoz elég."
+    text: "A családi ház felső szintjére kerestünk klímát. Több lehetőséget is átbeszéltünk, végül nem a legdrágább gépet ajánlották, hanem azt, ami tényleg elég volt a szobákhoz. Ezt külön értékeltem."
   },
   {
     name: "Kiss Márta",
     city: "Vámosszabadi",
-    text: "Klímatisztítást kértem, mert kellemetlen szaga volt a beltérinek. Fél óra után már érezhetően frissebb volt a levegő."
+    text: "A beltéri egységnek már kellemetlen szaga volt, ezért kértem egy tisztítást. Gyorsan megcsinálták, és utána érezhetően frissebb lett a levegő. Legközelebb is őket hívom."
   }
 ];
 
