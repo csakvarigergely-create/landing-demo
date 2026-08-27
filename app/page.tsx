@@ -175,11 +175,11 @@ export default function Home() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Ügyfélvélemények</p>
-              <h2 className="heading-lg">Nem reklámszöveg. Ezt emelik ki az ügyfelek.</h2>
+              <h2 className="heading-lg">Ezt mondják rólunk az ügyfeleink.</h2>
             </div>
             <div className="border-l-2 border-aqua pl-5">
               <strong className="text-2xl text-ink">4.9★</strong>
-              <p className="text-sm text-muted">Google értékelés, 127+ visszajelzés</p>
+              <p className="text-sm text-muted">Google értékelés · 127+ visszajelzés</p>
             </div>
           </div>
           <div className="grid gap-8 border-y border-line py-8 md:grid-cols-[1.25fr_0.9fr_0.9fr]">
