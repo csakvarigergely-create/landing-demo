@@ -52,7 +52,7 @@ export function Header() {
             +36 70 123 4567
           </a>
           <a href="#ajanlat" className="btn-primary min-h-11 px-4">
-            Ingyenes ajánlat 1 percen belül
+            Ingyenes felmérést kérek
           </a>
         </div>
       </div>
@@ -68,7 +68,7 @@ export function Header() {
           </a>
         ))}
         <a href="#ajanlat" className="btn-primary mt-1" onClick={() => setOpen(false)}>
-          Ingyenes ajánlat 1 percen belül
+          Ingyenes felmérést kérek
         </a>
       </nav>
     </header>
