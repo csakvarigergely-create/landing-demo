@@ -243,7 +243,7 @@ export default function Home() {
                   <strong className="mt-7 block text-3xl font-black leading-tight tracking-tight text-navy">
                     {item.price}
                   </strong>
-                  <p className="mt-6 text-sm leading-6 text-muted/85">{item.text}</p>
+                  <p className="mt-6 text-sm leading-6 text-muted/80">{item.text}</p>
                 </article>
               ))}
             </div>
