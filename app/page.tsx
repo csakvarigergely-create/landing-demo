@@ -151,13 +151,17 @@ export default function Home() {
             </figure>
             <div className="max-w-xl lg:pl-2">
               <p className="eyebrow">Helyszíni munka</p>
-              <h2 className="heading-lg">Nem katalóguskép. Ilyen egy átlagos szerelési nap.</h2>
-              <p className="mt-5 text-lg leading-8 text-muted">
-                Szerelő autóval érkezünk, szerszámokkal, takarófóliával és porszívóval. Kültéri egység,
-                beltéri egység, csövezés, tisztítás: minden munkánál figyelünk a rendre.
-              </p>
+              <h2 className="heading-lg">A jó szerelés nem a falra fúrt klímánál ér véget.</h2>
+              <div className="mt-5 grid gap-4 text-lg leading-8 text-muted">
+                <p>
+                  A legtöbb telepítés néhány óra alatt elkészül. Érkezés után még egyszer átbeszéljük, hova kerüljön a beltéri és a kültéri egység, majd kezdődhet a szerelés.
+                </p>
+                <p>
+                  A végén beüzemeljük a készüléket, megmutatjuk a használatát, és csak ezután adjuk át.
+                </p>
+              </div>
               <div className="mt-8 grid gap-3 border-l-2 border-line pl-5">
-                {["Cipővédő használat", "Pormentes fúrás", "Rendezett átadás"].map((item) => (
+                {["Helyszíni egyeztetés", "Szerelés és beüzemelés", "Használat bemutatása"].map((item) => (
                   <span key={item} className="text-sm font-black text-ink">
                     {item}
                   </span>
