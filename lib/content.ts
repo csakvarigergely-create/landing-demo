@@ -79,16 +79,16 @@ export const chatQuestions = [
   {
     question: "Mekkora klíma kell 40 m²-re?",
     answer:
-      "Általában 3,5 kW körüli készülék jöhet szóba, de számít a tájolás, belmagasság, szigetelés és az ablakfelület is."
+      "Általában 3,5 kW körüli készülék jöhet szóba, de önmagában az alapterület nem elég a választáshoz. Számít a tájolás, a belmagasság, a szigetelés és az ablakok mérete is."
   },
   {
     question: "Mennyit fogyaszt egy inverteres klíma?",
     answer:
-      "Használattól függ, de egy jól méretezett inverteres klíma kevesebbet dolgozik feleslegesen. A pontosabb becsléshez helyszíni felmérés kell."
+      "Erre nincs egyetlen fix szám. A fogyasztás függ a készüléktől, a helyiség méretétől, a beállított hőmérséklettől és attól is, mennyit használod. Klímaválasztásnál ebben is segítünk eligazodni."
   },
   {
     question: "Mennyi idő a telepítés?",
     answer:
-      "Egy átlagos split klíma telepítése általában 3-5 óra. A pontos idő a csövezéstől, a falazattól és a kültéri egység helyétől függ."
+      "Egy átlagos telepítés általában néhány óra alatt elkészül. Ha több készülékről vagy bonyolultabb szerelésről van szó, természetesen több időre lehet szükség."
   }
 ];
