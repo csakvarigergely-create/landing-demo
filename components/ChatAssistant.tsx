@@ -11,9 +11,9 @@ export function ChatAssistant() {
       <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
       <div>
         <p className="eyebrow">Gyors kérdések</p>
-        <h2 className="heading-lg">Nem kell pontosan tudnod, milyen klíma kell</h2>
+        <h2 className="heading-lg">Néhány kérdés, ami szinte mindig felmerül.</h2>
         <p className="mt-5 text-lg text-muted">
-          Pár alap kérdésre itt is kapsz választ. A végleges javaslatot helyszíni felmérés után adjuk meg.
+          Összeszedtük a leggyakoribb kérdéseket, amiket felmérés vagy telepítés előtt szoktak feltenni. A pontos választ mindig a helyszín és az igények alapján adjuk meg.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           {chatQuestions.map((item) => (
