@@ -215,7 +215,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid gap-px overflow-hidden rounded-3xl border border-line bg-line md:grid-cols-2 xl:grid-cols-4">
+            <div className="grid gap-px overflow-hidden rounded-3xl border border-slate-200/70 bg-slate-200/50 md:grid-cols-2 xl:grid-cols-4">
               {[
                 {
                   title: "Klíma alapszerelés",
@@ -225,31 +225,31 @@ export default function Home() {
                 {
                   title: "Klíma tisztítás",
                   price: "15 000 Ft-tól / készülék",
-                  text: "A beltéri egység alapos tisztítása, fertőtlenítése és a szűrők ellenőrzése."
+                  text: "Beltéri egység tisztítása, fertőtlenítése és a szűrők ellenőrzése."
                 },
                 {
                   title: "Karbantartás",
                   price: "18 000 Ft-tól / készülék",
-                  text: "A készülék működésének, a kondenzvíz-elvezetésnek és az általános állapotnak az ellenőrzése."
+                  text: "A készülék működésének és általános állapotának ellenőrzése."
                 },
                 {
                   title: "Hőszivattyús rendszer",
                   price: "2 500 000 Ft-tól",
-                  text: "A pontos összeg az ingatlan méretétől, a szükséges teljesítménytől és a meglévő fűtési rendszertől függ. Helyszíni felmérés után adunk rá pontos ajánlatot."
+                  text: "A pontos ár az ingatlan és a rendszer igényeitől függ. Pontos ajánlatot felmérés után adunk."
                 }
               ].map((item) => (
-                <article key={item.title} className="flex min-h-full flex-col bg-white p-6 sm:p-8">
+                <article key={item.title} className="flex min-h-full flex-col bg-white p-7 sm:p-9">
                   <h3 className="text-lg font-black text-ink">{item.title}</h3>
-                  <strong className="mt-5 block text-3xl font-black leading-tight tracking-tight text-navy">
+                  <strong className="mt-7 block text-3xl font-black leading-tight tracking-tight text-navy">
                     {item.price}
                   </strong>
-                  <p className="mt-5 leading-7 text-muted">{item.text}</p>
+                  <p className="mt-6 text-sm leading-6 text-muted/85">{item.text}</p>
                 </article>
               ))}
             </div>
 
-            <div className="mt-8 flex flex-col gap-5 border-l-2 border-aqua pl-5 sm:flex-row sm:items-center sm:justify-between">
-              <strong className="max-w-2xl text-lg leading-7 text-ink">
+            <div className="mt-6 flex flex-col gap-4 border-l-2 border-aqua pl-5 sm:flex-row sm:items-center sm:justify-between">
+              <strong className="max-w-2xl text-base font-bold leading-7 text-ink">
                 A helyszíni felmérés Győrben és 30 km-es körzetében ingyenes.
               </strong>
               <a href="#ajanlat" className="btn-primary shrink-0">
