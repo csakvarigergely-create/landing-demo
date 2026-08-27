@@ -215,7 +215,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid overflow-hidden rounded-3xl border border-line bg-line md:grid-cols-2 xl:grid-cols-4">
+            <div className="grid gap-px overflow-hidden rounded-3xl border border-line bg-line md:grid-cols-2 xl:grid-cols-4">
               {[
                 {
                   title: "Klíma alapszerelés",
