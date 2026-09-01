@@ -71,7 +71,7 @@ export default function Home() {
                   name={index === 0 ? "clock" : index === 1 ? "shield" : index === 2 ? "spark" : index === 3 ? "snow" : "factory"}
                   className="mb-4 h-5 w-5 text-aqua"
                 />
-                <h3 className="font-black text-ink">{item.title}</h3>
+                <h2 className="font-black text-ink">{item.title}</h2>
                 <p className="mt-2 text-sm text-muted">{item.text}</p>
               </article>
             ))}

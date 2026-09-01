@@ -21,6 +21,7 @@ export function ChatAssistant() {
               key={item.question}
               type="button"
               className="rounded-full border border-line bg-transparent px-4 py-2 text-sm font-black text-ink transition duration-300 ease-premium hover:border-aqua hover:text-aqua"
+              aria-pressed={answer === item.answer}
               onClick={() => setAnswer(item.answer)}
             >
               {item.question}
@@ -37,7 +38,9 @@ export function ChatAssistant() {
             <p className="text-sm text-muted">felmérés előtt hasznos lehet</p>
           </div>
         </div>
-        <p className="max-w-2xl text-xl leading-9 text-ink">{answer}</p>
+        <p className="max-w-2xl text-xl leading-9 text-ink" aria-live="polite">
+          {answer}
+        </p>
       </div>
       </div>
     </section>
