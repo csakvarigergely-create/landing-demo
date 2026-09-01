@@ -9,33 +9,50 @@ type LeadPayload = {
 };
 
 const PLACEHOLDER_WEBHOOK_URL = "IDE_ILLESZD_BE_A_WEBHOOK_URLT";
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function asTrimmedString(value: unknown, maxLength: number) {
+  return typeof value === "string" ? value.trim().slice(0, maxLength) : "";
+}
 
 export async function POST(request: Request) {
-  const payload = (await request.json()) as LeadPayload;
+  let payload: LeadPayload;
 
-  if (!payload.name || !payload.phone || !payload.email) {
+  try {
+    payload = (await request.json()) as LeadPayload;
+  } catch {
+    return NextResponse.json({ error: "Ervenytelen keres." }, { status: 400 });
+  }
+
+  const lead = {
+    name: asTrimmedString(payload.name, 100),
+    phone: asTrimmedString(payload.phone, 30),
+    email: asTrimmedString(payload.email, 254),
+    city: asTrimmedString(payload.city, 100),
+    message: asTrimmedString(payload.message, 2000)
+  };
+  const phoneDigits = lead.phone.replace(/\D/g, "");
+
+  if (!lead.name || !lead.phone || !lead.email || !lead.city) {
     return NextResponse.json({ error: "Hianyzo kotelezo mezo." }, { status: 400 });
   }
 
-  const webhookUrl = process.env.NEXT_PUBLIC_LEAD_WEBHOOK_URL;
+  if (!EMAIL_PATTERN.test(lead.email) || phoneDigits.length < 9 || phoneDigits.length > 15) {
+    return NextResponse.json({ error: "Ervenytelen kapcsolati adat." }, { status: 400 });
+  }
+
+  const webhookUrl = process.env.LEAD_WEBHOOK_URL ?? process.env.NEXT_PUBLIC_LEAD_WEBHOOK_URL;
 
   if (!webhookUrl || webhookUrl === PLACEHOLDER_WEBHOOK_URL || !webhookUrl.startsWith("https://")) {
     return NextResponse.json({ error: "A webhook URL nincs beallitva." }, { status: 500 });
   }
 
-  const lead = {
-    name: payload.name,
-    phone: payload.phone,
-    email: payload.email,
-    city: payload.city ?? "",
-    message: payload.message ?? ""
-  };
-
   try {
     const response = await fetch(webhookUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(lead)
+      body: JSON.stringify(lead),
+      signal: AbortSignal.timeout(15_000)
     });
 
     if (!response.ok) {

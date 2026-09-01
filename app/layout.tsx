@@ -4,12 +4,22 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://landing-demo-omega.vercel.app"),
   title: "KlímaPont Győr - klímaszerelés és tisztítás Győrben",
   description:
     "Klíma telepítés, tisztítás és karbantartás Győrben és 30 km-es körzetben. 24 órán belüli kapcsolatfelvétel, ingyenes felmérés, 5 év garancia.",
+  alternates: {
+    canonical: "/"
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
   openGraph: {
     title: "KlímaPont Győr - klímaszerelés és tisztítás Győrben",
     description: "Ingyenes felmérés, korrekt árak és garanciás klímaszerelés Győrben és környékén.",
+    url: "/",
+    siteName: "KlímaPont Győr",
     images: ["/assets/klima-hero-real-hvac.png"],
     locale: "hu_HU",
     type: "website"

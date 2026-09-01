@@ -30,7 +30,7 @@ export function Header() {
           className="grid h-11 w-11 place-items-center rounded-xl border border-line bg-white lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
-          aria-label="Menü megnyitása"
+          aria-label={open ? "Menü bezárása" : "Menü megnyitása"}
           onClick={() => setOpen((value) => !value)}
         >
           <span className="grid gap-1.5">

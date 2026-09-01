@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
@@ -23,6 +24,19 @@ body {
 #chatbase-bubble-window {
   right: 18px !important;
   bottom: 92px !important;
+}
+
+#chatbase-message-bubbles {
+  display: none !important;
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 3px solid #16a6b6;
+  outline-offset: 3px;
 }
 
 @layer components {
@@ -117,7 +131,11 @@ body {
   #chatbase-bubble-window {
     right: 10px !important;
     bottom: 156px !important;
-    max-height: calc(100vh - 176px) !important;
+    max-height: calc(100dvh - 176px) !important;
     max-width: calc(100vw - 20px) !important;
+  }
+
+  footer {
+    padding-bottom: 5.5rem;
   }
 }
