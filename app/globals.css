@@ -30,10 +30,6 @@ body {
   display: none !important;
 }
 
-section[id] {
-  scroll-margin-top: 6rem;
-}
-
 :where(a, button, input, textarea, select):focus-visible {
   outline: 3px solid #16a6b6;
   outline-offset: 3px;
